@@ -1,6 +1,10 @@
 import styles from './Heading.module.css';
 
-export  function Heading() {
-   
-    return <h1 className={styles.heading}>Olá mundo!</h1>;
+type HeadingProperty = {
+    children: React.ReactNode;
+}
+
+export  function Heading({ children }: HeadingProperty) {
+   console.log(children)
+    return <h1 className={styles.heading}>{children}</h1>;
 }
