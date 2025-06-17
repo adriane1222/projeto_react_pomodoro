@@ -1,24 +1,30 @@
-//PascalCase
-//ExemploDeComponente
-import { TimerIcon } from 'lucide-react';
-import { Heading } from './components/Heading'
-import './styles/global.css'
-import './styles/theme.css'
+import { Container } from './components/Container';
+import { Heading } from './components/Heading';
+import { Logo } from './components/Logo';
 
+
+import './styles/global.css';
+import './styles/theme.css';
 
 export function App() {
-    return (
-        <> 
-           <Heading>
-                Olá mundo!
-                <button>
-                    <TimerIcon />
-                </button>
-            </Heading>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat est ea saepe quasi ad error at? Exercitationem, consequatur iusto! Quisquam qui, voluptatum tempore earum in
-                optio vero ad velit tempora?
-            </p>
-        </>
-    ); // com fragment ou < > </> vazio
+   return (
+		<> 
+	 		<Container>
+				<Logo />
+			</Container>
+
+      		<Container>
+				<Heading>MENU</Heading>
+			</Container>
+   
+     		<Container>
+				<Heading>FORM</Heading>
+			</Container>
+
+			<Container>
+				<Heading>FOOTER</Heading>
+			</Container>
+   	</>
+	);
+     
 }
