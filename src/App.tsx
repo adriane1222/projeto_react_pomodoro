@@ -1,7 +1,11 @@
+import { SaveAllIcon } from 'lucide-react';
+import { Button } from './components/Button';
 import { Container } from './components/Container';
 import { CountDown } from './components/CountDown';
+import { Input } from './components/Input';
 import { Logo } from './components/Logo';
 import { Menu } from './components/Menu';
+import { Periods } from './components/Periods';
 
 
 import './styles/global.css';
@@ -25,8 +29,9 @@ export function App() {
 			<Container>
 				<form className='form' action="">
 					<div className='formRow'>
-						<label htmlFor='input'>Task</label>
-						<input id='input' type='text' />
+						<Input labelText='Preencha a tarefa' 
+								id='input' type='text' 
+								placeholder='Digite a tarefa' />
 					</div>
 
 					<div className='formRow'>
@@ -34,12 +39,11 @@ export function App() {
 					</div>
 
 					<div className='formRow'>
-						<p>Períodos</p>
-						<p> 0 0 0 0 0 0</p>
+						<Periods/>
 					</div>
 
 					<div className='formRow'>
-						<button>Registrar</button>
+						<Button icon={<SaveAllIcon />}/>
 					</div>
 				</form>
 			</Container>

@@ -1,0 +1,31 @@
+.periods {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.periodsDots {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.periodsDot {
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--primary);
+    border-radius: 50%;
+}
+
+.workPeriodDot {
+    background: var(--warning);
+}
+
+.longBreakPeriodDot {
+    background: var(--info);
+}
+
+.shortBreakPeriodDot {
+    background: var(--success);
+}
