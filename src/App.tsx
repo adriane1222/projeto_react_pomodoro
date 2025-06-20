@@ -1,4 +1,4 @@
-import { SaveAllIcon } from 'lucide-react';
+import { SaveIcon } from 'lucide-react';
 import { Button } from './components/Button';
 import { Container } from './components/Container';
 import { CountDown } from './components/CountDown';
@@ -10,6 +10,7 @@ import { Periods } from './components/Periods';
 
 import './styles/global.css';
 import './styles/theme.css';
+import { Footer } from './components/Footer';
 
 export function App() {
    return (
@@ -43,9 +44,13 @@ export function App() {
 					</div>
 
 					<div className='formRow'>
-						<Button icon={<SaveAllIcon />}/>
+						<Button icon={<SaveIcon />} />
 					</div>
 				</form>
+			</Container>
+
+			<Container>
+				<Footer />
 			</Container>
    		</>
 	);
