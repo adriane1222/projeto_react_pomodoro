@@ -6,15 +6,14 @@ import { Input } from './components/Input';
 import { Logo } from './components/Logo';
 import { Menu } from './components/Menu';
 import { Periods } from './components/Periods';
-
+import { Footer } from './components/Footer';
 
 import './styles/global.css';
 import './styles/theme.css';
-import { Footer } from './components/Footer';
 
 export function App() {
    return (
-		<> 
+		<>   
 	 		<Container>
 				<Logo />
 			</Container>
@@ -30,9 +29,10 @@ export function App() {
 			<Container>
 				<form className='form' action="">
 					<div className='formRow'>
-						<Input labelText='Preencha a tarefa' 
-								id='input' type='text' 
-								placeholder='Digite a tarefa' />
+						<Input 
+						labelText='Preencha a tarefa' 
+						id='input' type='text' 
+						placeholder='Digite a tarefa' />
 					</div>
 
 					<div className='formRow'>
